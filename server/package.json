@@ -1,27 +1,24 @@
 {
-  "name": "ecommerce-store-v2",
+  "name": "develop",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog for mastering skills",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon",
-    "seed": "node config/seeds.js"
+    "watch": "nodemon"
+    },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.3.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "apollo-server-express": "^3.6.1",
-    "bcrypt": "^5.1.1",
-    "dotenv": "^16.3.1",
-    "express": "^4.17.2",
-    "graphql": "^16.3.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.1.8",
-    "stripe": "^8.67.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  }
+  "license": "MIT"
 }

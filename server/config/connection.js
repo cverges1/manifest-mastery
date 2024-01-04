@@ -9,4 +9,6 @@ mongoose.connect(
     }
 );
 
-module.exports = mongoose.connection;
+const connection = mongoose.connection;
+
+module.exports = connection;

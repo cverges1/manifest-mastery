@@ -1,47 +1,45 @@
-//importing our mongoose dependency
-const mongoose = require('mongoose');
+const { Schema, model, default: mongoose } = require("mongoose");
 
-const { Schema } = mongoose;
-const bcrypt = require('bcrypt');
-const Order = require('./Order');
-//setting up the schema model for User
-
-const userSchema = new Schema({
-  firstName: {
-    type: String,
-    required: true,
-    trim: true,
+const userSchema = new Schema(
+  {
+    username: {
+      type: String,
+      unique: true,
+      required: true,
+      trim: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      match: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+    },
+    thoughts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Thought",
+      },
+    ],
+    friends: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
-  lastName: {
-    type: String,
-    required: true,
-    trim: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    minlength: 8,
-  },
-  orders: [Order.schema],
-});
-
-userSchema.pre('save', async function (next) {
-  if (this.isNew || this.isModified('password')) {
-    this.password = await bcrypt.hash(this.password, 10);
+  {
+    toJSON: {
+      virtuals: true,
+    },
+    id: false,
   }
+);
 
-  next();
+userSchema.virtual('friendCount')
+.get(function(){
+    return `${this.friends.length}`
 });
 
-userSchema.methods.checkPassword = async function (password) {
-  return await bcrypt.compare(password, this.password);
-};
-
-const User = mongoose.model('User', userSchema);
+const User = model('User',userSchema);
 
 module.exports = User;
