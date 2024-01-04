@@ -1,7 +1,4 @@
-//here we are imporing all of our models
-const User = require('./User');
-const Order = require('./Order');
-const Category = require('./Category');
-const Product = require('./Product');
+const User = require('./user');
+const Thought = require('./thought');
 
-module.exports = { User, };
+module.exports = { User, Thought };

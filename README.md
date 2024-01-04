@@ -1,70 +1,31 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  # Manifest Mastery
+  ## Licensing: MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+  ## Description
+  This MERN application is blog for user's to document their journey to mastery of a new skill or as they try and achieve a goal. User's will be not only be able to track their own progress but will be able to comment on and encourage other users. As someone who is always working at honing my skills I wanted to create a place to document what I have been working on and the progress I have made for a variety of hobbies and interests. I also wanted to be able to gether opinions from others so that I can gain new knowledge and encourage other users on their journey. This application is a refactored version of a previous blog I created found at https://github.com/cverges1/Tech-Blog-MVC and another back-end I created found at https://github.com/cverges1/Social-Network-API and uses a React.js front-end. 
+  
+  ## Table of Contents
+  
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Credits](#credits)
+  -[License](#license)  
 
-In the project directory, you can run:
+  ## Installation
+  
+  To install this application visit https://github.com/cverges1/manifest-mastery and download the starter code. Open the application at the root and run `npm i` to install the necessary node packages.
+  
+  ## Usage
+  
+  Register an account and you're off to the races! From your profile you'll be able to create a new "Pursuits" and add comments and timetables to your Pursuits so you can keep yourself accountable and track your progress.
+  
+  ## Credits
+  
+  - Collaborators: N/A
+  - Third Party Assets: MongoDB, Express, React, Node.js, bcrypt, concurrently and MUI
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ## Questions
+  To contact me with additional questions:
+  - Github: cverges1
+  - Email: vergeschris@gmail.com
